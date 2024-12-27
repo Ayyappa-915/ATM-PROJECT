@@ -8,14 +8,14 @@ const port = 3000;
 
 app.use(express.json());
 
-/* mongoose.connect('mongodb+srv://coderhoney915:coderhoney915@cluster0.vvldp.mongodb.net/ATM_DATABASE')
+mongoose.connect('mongodb+srv://coderhoney915:coderhoney915@cluster0.vvldp.mongodb.net/ATM_DATABASE')
 .then(() => { console.log("connected to mongodb") })
-.catch(error => { console.log("Error", error) }); */
+.catch(error => { console.log("Error", error) }); 
 
 
-mongoose.connect('mongodb://localhost:27017/DB')
+/* mongoose.connect('mongodb://localhost:27017/DB')
     .then(() => { console.log("connected to mongodb") })
-    .catch(error => { console.log("Error", error) }); 
+    .catch(error => { console.log("Error", error) }); */
 
 
 
