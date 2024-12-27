@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANGE PIN</title>
+    <link rel="stylesheet" media="screen and (max-width:767px)" href="../CSS/mobile_change_pin.css">
+    <link rel="stylesheet"  media="screen and (min-width:768px)" href="../CSS/change_pin.css">
+    <script src="../JAVASCRIPT/change_pin.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p><u><b>PLEASE  ENTER  USER'S  DETAILS  FOR  'PIN' CHANGE</b></u></p>
+        <br>
+        <div class="a1">
+            <form id="f1">
+                <label for="account_name">ACCOUNT HOLDER NAME:</label>
+                <input type="text" id="account_name" style="text-transform: uppercase;" placeholder="account name" name="account_name" required>
+                <br><br>
+                <label for="account_number">ACCOUNT NUMBER:</label>
+                <input type="number" id="account_number" name="account_number" placeholder="account number">
+                <br>
+                <div id="msg1"></div><br>
+                <label for="old_pin_number">OLD PIN NUMBER:</label>
+                <input type="password" id="old_pin_number" name="old_pin_number" placeholder="old pin number" required>
+                <br>
+                <div id="msg2"></div><br>
+                <label for="new_pin_number">NEW PIN NUMBER:</label>
+                <input type="password" id="new_pin_number" name="new_pin_number" placeholder="new pin number" required>
+                <br><div id="msg3"></div><br>
+                <label for="new_pin_number_1">CONFIRM PIN NUMBER:</label>
+                <input type="password" id="new_pin_number_1" name="new_pin_number_1" placeholder="re-enter new pin number" required>
+                <br><div id="msg4"></div><br><br>
+                <div class="button">
+                    <button type="submit" id="b1" onclick="change_pin(event)"><b>CHANGE PIN</b>
+                    <button type="reset" id="b2" onclick="clear_fields()"><b>CLEAR</b></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

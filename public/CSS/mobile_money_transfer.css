@@ -1,0 +1,81 @@
+
+.main
+{
+    text-align: center;
+    border-radius: 0.3cm;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.1cm;
+    padding-bottom: 0.2cm;
+    margin-left: 0.5cm;
+    margin-top: 2cm;
+    margin-right: 0.5cm;
+    background-color: white;
+}
+button
+{
+    font-size: x-small;
+    border-radius: 0.1cm;
+    cursor: pointer;
+    color: blue;
+    padding: 0.1cm;
+}
+button:hover
+{
+    background-color: yellow;
+}
+h3
+{
+    font-size: medium;
+}
+i
+{
+    font-size: x-small;
+}
+input
+{
+    height: 0.4cm;
+    width: 4cm;
+    font-size: medium;
+    float: right;
+    margin-right: 2cm;
+    border-radius: 0.1cm;
+    border-color: darkblue;
+}
+p
+{
+    font-size: medium;
+}
+label
+{
+    font-size: x-small;
+    display: block;
+    float: left;
+    text-align: right;
+    margin-left: 0.5cm;
+}
+label
+{
+    font-weight: bolder;
+}
+
+.button
+{
+    display:flex;
+    gap: 2cm;
+    margin-left: 3cm;
+}
+i
+{
+    font-size: x-small;
+}
+#msg1,#msg2,#msg3
+{
+    color:red;
+    font-size: smaller;
+}
+.a2
+{
+    padding-top: 0.2cm;
+}
