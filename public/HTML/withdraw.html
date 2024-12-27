@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WITHDRAW</title>
+    <link rel="stylesheet" media="screen and (max-width:767px)" href="../CSS/mobile_withdraw.css">
+    <link rel="stylesheet"  media="screen and (min-width:768px)" href="../CSS/withdraw.css">
+    <script src="../JAVASCRIPT/withdraw.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p><u><b>PLEASE   ENTER   USER'S   DETAILS   FOR   'WITHDRAW'  MONEY</b></u></p>
+        <br>
+        <div class="a1">
+            <form id="f1">
+                <label for="account_number">ACCOUNT NUMBER:</label>
+                <input type="number" id="account_number" name="account_number" placeholder="account number" required>
+                <br><div id="msg1"></div><br>
+                <label for="pin_number">PIN NUMBER:</label>
+                <input type="password" id="pin_number" name="pin_number" placeholder="pin number" required>
+                <br><div id="msg2"></div><br>
+                <label for="amount">Amount :</label>
+                <input type="number" id="amount" placeholder="amount" name="amount" required>
+                <br><div id="msg3"></div><br><br>
+                <div class="button">
+                    <button type="submit" id="b1" onclick="withdraw(event)"><b>WITHDRAW</b>
+                    <button type="reset" id="b2" onclick="clear_fields()"><b>CLEAR</b></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

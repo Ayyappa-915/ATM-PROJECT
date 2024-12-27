@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEPOSIT</title>
+    <link rel="stylesheet" media="screen and (max-width:767px)" href="../CSS/mobile_deposit.css">
+    <link rel="stylesheet"  media="screen and (min-width:768px)" href="../CSS/deposit.css">
+    <script src="../JAVASCRIPT/deposit.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p><u><b>PLEASE   ENTER   USER'S   DETAILS   FOR   'DEPOSIT'  MONEY</b></u></p>
+        <br>
+        <div class="a1">
+            <form id="f1">
+                <label for="account_number">ACCOUNT NUMBER:</label>
+                <input type="number" id="account_number" placeholder="account number"  name="account_number" required>
+                <br>
+                <div id="msg1"></div><br>
+                <label for="pin_number">PIN NUMBER:</label>
+                <input type="password" id="pin_number" placeholder="pin number" name="pin_number" required>
+                <br>
+                <div id="msg2"></div><br>
+                <label for="amount">Amount :</label>
+                <input type="number" id="amount" placeholder="amount" name="amount" required>
+                <br><br><br>
+                <div class="button">
+                    <button type="submit" id="b1" onclick="deposit(event)"><b>DEPOSIT</b>
+                    <button type="reset" id="b2" onclick="clear_fields()"><b>CLEAR</b></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

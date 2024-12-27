@@ -1,0 +1,35 @@
+.button-class-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+.button-class-1
+{
+    padding-left: 8cm;
+}
+.button-class-2
+{
+    padding-right: 8cm;
+}
+button
+{
+    height: 2cm;
+    width: 8cm;
+    font-size: larger;
+    padding:0.5cm;
+    padding-bottom: 0.5cm;
+    cursor: pointer;
+    border-radius: 0.2cm;
+    background-color: white;
+}
+button:hover 
+{
+    background-color: black;
+    color: white;
+    border-radius: 0.3cm;
+}
+.h1
+{
+    padding-top: 2cm;
+    font-size: 1.5cm;
+}
