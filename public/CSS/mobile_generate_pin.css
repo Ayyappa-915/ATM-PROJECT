@@ -1,0 +1,71 @@
+
+    .container {
+        justify-content: center;
+        border-style: solid;
+        border-color: black;
+        background-color: white;
+        text-align: center;
+        margin-top: 1cm;
+        padding-bottom: 0.5cm;
+        border-radius: 0.3cm;
+        width: 90%;
+    }
+
+    .a1, .a2, .a3, .a4 {
+        text-align: center;
+    }
+
+    button {
+        cursor: pointer;
+        color: blue;
+        font-size: small;
+        padding: 0.5cm;
+        width: 100%;
+        border-radius: 0.2cm;
+    }
+
+    button:hover {
+        background-color: yellow;
+    }
+
+    label {
+        font-weight: bolder;
+        margin-left: 0.5cm;
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    input {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        border-color: darkblue;
+        border-radius: 0.1cm;
+        padding: 0.5cm;
+    }
+
+    #msg1, #msg2, #msg3, #msg4 {
+        color: red;
+        font-size: small;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        gap: 1cm;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #b1, #b2 {
+        border-radius: 0.1cm;
+        width: 100%;
+        font-size: small;
+        padding: 0.5cm;
+    }
+
+    p {
+        font-size: medium;
+        color: darkblue;
+    }

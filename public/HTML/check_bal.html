@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALANCE ENQUIRY</title>
+    <link rel="stylesheet" media="screen and (max-width:767px)" href="../CSS/mobile_check_bal.css">
+    <link rel="stylesheet"  media="screen and (min-width:768px)" href="../CSS/check_bal.css">
+    <script src="../JAVASCRIPT/check_bal.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p><u><b>PLEASE ENTER USER'S DETAILS FOR 'CHECK BALANCE' MONEY</b></u></p>
+        <br>
+        <div class="a1">
+            <form id="f1"> 
+                <label for="account_number">ACCOUNT NUMBER:</label>
+                <input type="number" class="input" id="account_number" placeholder="account number" name="account_number" required>
+                <br>
+                <div id="msg1"></div><br>
+                <label for="pin_number">PIN NUMBER:</label>
+                <input type="password" class="input" id="pin_number" placeholder="pin number" name="pin_number" required>
+                <br>
+                <div id="msg2"></div><br>
+                <br>
+                <div class="button">
+                    <button type="submit" id="b1" onclick="load(event)"><b>CHECK BALANCE</b>
+                    <button type="reset" id="b2" onclick="clear_fields()"><b>CLEAR</b></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

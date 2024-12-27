@@ -1,0 +1,76 @@
+
+.main
+{
+    text-align: center;
+    border-radius: 0.3cm;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.2cm;
+    padding-bottom: 0.5cm;
+    margin-left: 10cm;
+    margin-top: 4cm;
+    margin-right: 10cm;
+    background-color: white;
+}
+p
+{
+    font-size: larger;
+}
+button
+{
+    font-size: large;
+    border-radius: 0.2cm;
+    cursor: pointer;
+    color: blue;
+    padding: 0.2cm;
+}
+button:hover
+{
+    background-color: yellow;
+}
+h3
+{
+    font-size: x-large;
+}
+i
+{
+    font-size: x-large;
+}
+input
+{
+    height: 0.6cm;
+    font-size: medium;
+    float: right;
+    margin-right: 2cm;
+    border-radius: 0.1cm;
+    border-color: darkblue;
+}
+label
+{
+    font-size: large;
+    display: block;
+    float: left;
+    text-align: right;
+    margin-left: 2cm;
+}
+label
+{
+    font-weight: bolder;
+}
+
+.button
+{
+    display:flex;
+    gap: 3cm;
+    margin-left: 5cm;
+}
+i
+{
+    font-size: larger;
+}
+#msg1,#msg2,#msg3
+{
+    color:red;
+    font-size: smaller;
+}
