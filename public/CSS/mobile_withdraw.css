@@ -1,0 +1,85 @@
+.container
+{
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    text-align: center;
+    margin-top: 3cm;
+    padding-bottom: 0.5cm;
+    border-radius: 0.3cm;
+}
+.a1
+{
+    text-align: center;
+}
+p
+{
+    font-size: small;
+}
+.a2
+{
+    text-align: center;
+}
+.a3
+{
+    text-align: center;
+}
+.a4
+{
+    text-align: center;
+}
+button
+{
+    cursor: pointer;
+    color: blue;
+}
+button:hover
+{
+    background-color:yellow;
+}
+label
+{
+    font-weight: bolder;
+    margin-left: 0.3cm;
+    font-size: x-small;
+}
+p
+{
+    color: darkblue;
+}
+
+input
+{
+    font-size: x-small;
+    float: right;
+    border-color: darkblue;
+    margin-right: 0.3cm;
+    border-radius: 0.1cm;
+}
+label
+{
+    display: block;
+    float: left;
+    text-align: right;
+}
+body
+{
+    background-color: darkcyan;
+}
+#msg1,#msg2,#msg3,#msg4
+{
+    color: red;
+}
+.button
+{
+    display:flex;
+    gap: 1cm;
+    margin-left: 1.8cm;
+}
+#b1,#b2
+{
+    border-radius: 0.2cm;
+    font-size: x-small;
+    padding: 0.1cm;
+}

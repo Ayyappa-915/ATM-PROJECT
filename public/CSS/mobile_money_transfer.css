@@ -1,0 +1,88 @@
+
+.main
+{
+    text-align: center;
+    border-radius: 0.3cm;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.1cm;
+    padding-bottom: 0.2cm;
+    margin-top: 3cm;
+    background-color: white;
+}
+button
+{
+    font-size: x-small;
+    border-radius: 0.1cm;
+    cursor: pointer;
+    color: blue;
+    padding: 0.1cm;
+}
+button:hover
+{
+    background-color: yellow;
+}
+h3
+{
+    font-size: small;
+}
+i
+{
+    font-size: x-small;
+}
+input
+{
+    
+    font-size: x-small;
+    float: right;
+    margin-right: 0.3cm;
+    border-radius: 0.1cm;
+    border-color: darkblue;
+}
+p
+{
+    font-size: x-small;
+}
+label
+{
+    font-size: x-small;
+    display: block;
+    float: left;
+    text-align: right;
+    margin-left: 0.3cm;
+}
+label
+{
+    font-weight: bolder;
+}
+body
+{
+    background-color: darkcyan;
+}
+.button
+{
+    display:flex;
+    gap: 1cm;
+    margin-left: 1.8cm;
+
+}
+button
+{
+    font-size: x-small;
+    padding: 0.1cm;
+    border-radius: 0.2cm;
+}
+i
+{
+    font-size: x-small;
+}
+#msg1,#msg2,#msg3
+{
+    color:red;
+    font-size: smaller;
+}
+.a2
+{
+    padding-top: 0.2cm;
+}
