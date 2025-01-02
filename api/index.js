@@ -249,7 +249,7 @@ app.post('/transaction', (request, response) => {
             response.json({ msg: "Invalid Pin Number. Please enter a valid PIN number", done: false });
             return null;
         }
-        transaction_model.find({ account_number })
+        return transaction_model.find({ account_number })
         .then((existing_transaction) => {
             if (!existing_transaction || existing_transaction.length === 0) {
                 response.json({ msg: "Transaction was not started yet..." });
