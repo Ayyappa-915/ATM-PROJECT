@@ -235,51 +235,50 @@ app.post('/change_pin' , (req,res)=>{
 
 app.post('/transaction', (request, response) => {
     const { account_number, pin_number } = request.body;
-
     account_model.findOne({ account_number })
     .then((existing_account) => {
         if (!existing_account) {
-            response.json({ msg: "Account was not found...", done: false });
-            return null; // Stop further processing
+            response.json({ msg: "Account was not found...", done: true });
+            return null;
         }
         if (!existing_account.pin_number) {
-            response.json({ msg: "Pin was not generated for this account", done: false });
+            response.json({ msg: "Pin was not generated for this account", done: true });
             return null;
         }
         if (existing_account.pin_number !== pin_number) {
             response.json({ msg: "Invalid Pin Number. Please enter a valid PIN number", done: false });
             return null;
         }
-
-        return transaction_model.find({ account_number });
-    })
-    .then((existing_transactions) => {
-        if (existing_transactions === null) return; // If previous promise stopped further processing
-
-        if (!existing_transactions || existing_transactions.length === 0) {
-            response.json({ msg: "No transactions found for this account.", done: true });
-            return null;
-        }
-
-        const formattedTransactions = existing_transactions.map((transaction) => ({
-            account_number: transaction.account_number,
-            amount: transaction.amount,
-            type: transaction.type,
-            date: transaction.date,
-        }));
-
-        response.json({
-            msg: "Transaction History:",
-            tra: formattedTransactions,
-            done: true
+        transaction_model.find({ account_number })
+        .then((existing_transaction) => {
+            if (!existing_transaction || existing_transaction.length === 0) {
+                response.json({ msg: "Transaction was not started yet..." });
+                return null;
+            }
+            const formattedTransactions = existing_transaction.map((existing_transaction) => {
+                return {
+                    'account_number': existing_transaction.account_number,
+                    'amount': existing_transaction.amount, 
+                    'type': existing_transaction.type,
+                    'date' : existing_transaction.date,
+                };
+            });
+            response.json({
+                msg: "Transaction History:",
+                tra: formattedTransactions,
+                done: true
+            });
+        })
+        .catch((error) => {
+            console.error(error);
+            response.json({ msg: "Failed to fetch transaction history due to error", error });
         });
     })
     .catch((error) => {
-        console.error("Error occurred:", error);
-        response.status(500).json({ msg: "Failed to fetch transaction history due to an error.", done: false });
+        console.error(error);
+        response.json({ msg: "Error finding account", error });
     });
 });
-
 
 app.post('/money_transfer', (req, res) => {
     const {rec_acc_no,sen_acc_no,amount,pin_number} = req.body;
