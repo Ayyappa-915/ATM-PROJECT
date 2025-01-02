@@ -251,7 +251,7 @@ app.post('/transaction', (request, response) => {
         }
         transaction_model.find({ account_number })
         .then((existing_transaction) => {
-            if (!existing_transaction || existing_transaction.length === 0) {
+            if (!existing_transaction) {
                 response.json({ msg: "Transaction was not started yet..." });
                 return null;
             }
