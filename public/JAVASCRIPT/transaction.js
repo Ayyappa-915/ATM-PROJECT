@@ -37,11 +37,15 @@ function transaction(event) {
         return res.json();
     })
     .then((result) => {
-        if (result.done) { 
-            const transactions = result.tra.map((doc) => 
-                `Account Number: ${doc.account_number}\nType: ${doc.type}\nAmount: ${doc.amount}\nDate: ${doc.date}`
-            ).join('\n\n');
-            alert(`Transaction History:\n\n${transactions}`);
+        if (result.done) {
+            if (Array.isArray(result.tra) && result.tra.length > 0) {
+                const transactions = result.tra.map((doc) =>
+                    `Account Number: ${doc.account_number}\nType: ${doc.type}\nAmount: ${doc.amount}\nDate: ${doc.date}`
+                ).join('\n\n');
+                alert(`Transaction History:\n\n${transactions}`);
+            } else {
+                alert("No transaction history found for this account.");
+            }
             window.location.href = '/index.html';
         } else {
             alert("Failed to fetch transaction history. Please try again.");
